@@ -535,7 +535,7 @@ function HomePage() {
               Explore Tools →
             </button>
           </Link>
-          <Link href="/tools/market-insights/terminal">
+          <Link href="/terminal">
             <button className="px-6 py-3 border border-white bg-transparent text-white font-semibold rounded-full hover:bg-white hover:text-primaryBlue transition-all">
               News Terminal →
             </button>
@@ -606,7 +606,7 @@ function HomePage() {
                 <ChartIcon />
                 <h3 className="text-xl font-bold text-black mb-2">Homebase Screener</h3>
                 <p className="text-sm text-gray-600 leading-relaxed mb-4">Get real-time coin prices and find the hottest base pairs.</p>
-                <Link href="/tools/trading-research/token-scanner">
+                <Link href="/token-scanner">
                   <button className="mt-3 px-5 py-2 border-2 border-black text-black font-semibold rounded-full hover:bg-black hover:text-white transition-all">
                     Find Coins →
                   </button>
@@ -617,7 +617,7 @@ function HomePage() {
                 <InsightIcon />
                 <h3 className="text-xl font-bold text-black mb-2">Whale Watchers</h3>
                 <p className="text-sm text-gray-600 leading-relaxed mb-4">Track large wallet movements and detect potential market shifts.</p>
-                <Link href="/tools/trading-research/whale-watcher">
+                <Link href="/whale-watcher">
                   <button className="mt-3 px-5 py-2 border-2 border-black text-black font-semibold rounded-full hover:bg-black hover:text-white transition-all">
                     Track Whales →
                   </button>
@@ -628,7 +628,7 @@ function HomePage() {
                 <ToolIcon />
                 <h3 className="text-xl font-bold text-black mb-2">Token Launch Calendar</h3>
                 <p className="text-sm text-gray-600 leading-relaxed mb-4">Stay ahead with upcoming token launches and market trends.</p>
-                <Link href="/tools/market-insights/launch-calendar">
+                <Link href="/launch-calendar">
                   <button className="mt-3 px-5 py-2 border-2 border-black text-black font-semibold rounded-full hover:bg-black hover:text-white transition-all">
                     View Calendar →
                   </button>

@@ -35,6 +35,16 @@ export default function Sidebar({
   setIsSidebarOpen,
 }: SidebarProps) {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // Filter sections by search term (matching title or any subsection title)
+  const filteredSections = sections.filter(section =>
+    section.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    (section.subSections &&
+      section.subSections.some(sub =>
+        sub.title.toLowerCase().includes(searchTerm.toLowerCase())
+      ))
+  );
 
   return (
     <aside
@@ -50,7 +60,7 @@ export default function Sidebar({
         border-r border-gray-700
         px-4
         pb-4
-        pt-20 lg:pt-1     /* Extra padding so "Documentation" is lower */
+        pt-20 lg:pt-1
         transform
         transition-transform
         overflow-y-auto
@@ -58,7 +68,7 @@ export default function Sidebar({
         lg:translate-x-0
       `}
     >
-      {/* Close button (mobile) */}
+      {/* Close button for mobile */}
       <button
         className="lg:hidden text-xl float-right mb-2"
         onClick={() => setIsSidebarOpen(false)}
@@ -66,24 +76,24 @@ export default function Sidebar({
         ✖
       </button>
 
-      {/* Lowered "Documentation" text so it's not too close to the top */}
       <h2 className="text-lg font-bold mb-4 mt-2">Documentation</h2>
 
       {/* Search Field */}
       <input
         type="text"
         placeholder="Search Docs..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
         className="w-full px-4 py-2 mb-6 border border-gray-600 rounded-md bg-black text-white"
       />
 
       <ul className="space-y-4">
-        {sections.map((section) => (
+        {filteredSections.map((section) => (
           <li key={section.id}>
-            {/* If there's a subSections array, we show a dropdown */}
             {section.subSections ? (
               <div>
                 <button
-                  className="flex items-center justify-between w-full text-left px-4 py-2 rounded-md transition-all hover:bg-gray-800"
+                  className="flex items-center justify-between w-full text-left px-4 py-2 rounded-md transition-all hover:bg-[#0052FF]"
                   onClick={() =>
                     setOpenDropdown(
                       openDropdown === section.id ? null : section.id
@@ -97,7 +107,6 @@ export default function Sidebar({
                     <ChevronRight size={18} />
                   )}
                 </button>
-
                 {openDropdown === section.id && (
                   <ul className="pl-4 space-y-2 mt-1">
                     {section.subSections.map((sub) => (
@@ -109,8 +118,8 @@ export default function Sidebar({
                           }}
                           className={`block w-full text-left px-4 py-2 rounded-md transition-all ${
                             activeSection === sub.id
-                              ? "bg-blue-600 text-white font-bold"
-                              : "hover:bg-gray-700"
+                              ? "bg-[#0052FF] text-white font-bold"
+                              : "hover:bg-[#0052FF]"
                           }`}
                         >
                           {sub.title}
@@ -121,7 +130,6 @@ export default function Sidebar({
                 )}
               </div>
             ) : (
-              // No subSections => direct link
               <button
                 onClick={() => {
                   setActiveSection(section.id);
@@ -129,8 +137,8 @@ export default function Sidebar({
                 }}
                 className={`w-full text-left px-4 py-2 rounded-md transition-all ${
                   activeSection === section.id
-                    ? "bg-blue-600 text-white font-bold"
-                    : "hover:bg-gray-800"
+                    ? "bg-[#0052FF] text-white font-bold"
+                    : "hover:bg-[#0052FF]"
                 }`}
               >
                 {section.title}
@@ -142,6 +150,8 @@ export default function Sidebar({
     </aside>
   );
 }
+
+
 
 
 

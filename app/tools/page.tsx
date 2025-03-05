@@ -29,17 +29,17 @@ const tools = [
     items: [
       {
         name: 'Token Scanner',
-        link: '/tools/trading-research/token-scanner',
+        link: '/token-scanner',
         description: 'Scan smart contracts for risks and insights.',
       },
       {
         name: 'Whale Watcher',
-        link: '/tools/trading-research/whale-watcher',
+        link: '/whale-watcher',
         description: 'Track large wallet movements in real time.',
       },
       {
-        name: 'Honeypot Checker',
-        link: '/tools/trading-research/honeypot-checker',
+        name: 'Honeypot Scanner',
+        link: '/honeypot-scanner',
         description: 'Identify potential honeypot scams before investing.',
       },
     ],
@@ -49,17 +49,17 @@ const tools = [
     items: [
       {
         name: 'Token Launch Calendar',
-        link: '/tools/market-insights/launch-calendar',
+        link: '/launch-calendar',
         description: 'Stay updated on upcoming token launches.',
       },
       {
-        name: 'Crypto News Aggregator',
-        link: '/tools/market-insights/terminal',
+        name: 'Base Chain News',
+        link: '/terminal',
         description: 'Get real-time news from top crypto sources.',
       },
       {
         name: 'Real-Time Market Trends',
-        link: '/tools/market-insights/market-trends',
+        link: '/market-trends',
         description: 'Analyze market trends and price action.',
       },
     ],

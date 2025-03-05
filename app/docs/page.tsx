@@ -51,7 +51,7 @@ export default function DocsPage() {
           {/* LOGO Link */}
           <Link href="/">
             <img
-              src="https://i.imgur.com/7L1Xsfa.png"
+              src="https://i.imgur.com/1Sys3Pr.png"
               alt="Homebase Logo"
               className="w-8 h-8 object-contain cursor-pointer"
             />

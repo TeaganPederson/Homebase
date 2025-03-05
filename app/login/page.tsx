@@ -70,7 +70,7 @@ export default function AuthPage() {
               />
             </Link>
             <span className="ml-2 text-xl font-bold text-[#0052FF]">
-              homebase.
+              Homebase
             </span>
           </div>
           {/* Support and Language Dropdowns */}

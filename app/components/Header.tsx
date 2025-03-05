@@ -25,14 +25,20 @@ const Header = () => {
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <Image
-              src="https://i.imgur.com/7L1Xsfa.png"
+              src="https://i.imgur.com/OML2njS.png"
               alt="Homebase Logo"
               width={40}
               height={40}
             />
-            <span className="ml-2 text-xl font-bold text-[#0052FF] relative top-1 md:top-0">
-              Homebase
-            </span>
+            <span className="ml-2 text-xl font-medium relative top-1 md:top-0 flex items-center">
+  <span className="text-[#0047CC] tracking-wide"></span> 
+  <span className="ml-2 text-xs font-bold text-green-700 bg-green-100 border border-green-500 rounded-full px-3 py-0.5 flex items-center relative top-[1px]">
+    v1 BETA
+  </span>
+</span>
+
+
+
           </Link>
         </div>
 
@@ -78,7 +84,7 @@ const Header = () => {
             >
               <li>
                 <Link
-                  href="/tools/trading-research/whale-watcher"
+                  href="/whale-watcher"
                   className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:bg-gray-100"
                 >
                   {/* Eye Icon */}
@@ -105,7 +111,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/tools/trading-research/token-scanner"
+                  href="/token-scanner"
                   className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:bg-gray-100"
                 >
                   {/* MagnifyingGlass Icon */}
@@ -127,7 +133,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/tools/trading-research/honeypot-checker"
+                  href="/honeypot-scanner"
                   className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:bg-gray-100"
                 >
                   {/* ShieldExclamation Icon */}
@@ -149,7 +155,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/tools/market-insights/launch-calendar"
+                  href="/launch-calendar"
                   className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:bg-gray-100"
                 >
                   {/* CalendarDays Icon */}
@@ -171,7 +177,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/tools/market-insights/terminal"
+                  href="/terminal"
                   className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:bg-gray-100"
                 >
                   {/* Newspaper Icon */}
@@ -324,7 +330,7 @@ const Header = () => {
               <ul className="mt-2 ml-4 space-y-2">
                 <li>
                   <Link
-                    href="/tools/whale-watchers"
+                    href="/whale-watcher"
                     onClick={() => {
                       setIsMenuOpen(false);
                       setIsToolsMobileOpen(false);
@@ -355,7 +361,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    href="/tools/token-screener"
+                    href="/token-scanner"
                     onClick={() => {
                       setIsMenuOpen(false);
                       setIsToolsMobileOpen(false);
@@ -381,7 +387,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    href="/tools/honeypot-scanner"
+                    href="/honeypot-scanner"
                     onClick={() => {
                       setIsMenuOpen(false);
                       setIsToolsMobileOpen(false);
@@ -407,7 +413,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    href="/tools/launch-calendar"
+                    href="/launch-calendar"
                     onClick={() => {
                       setIsMenuOpen(false);
                       setIsToolsMobileOpen(false);
@@ -433,7 +439,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    href="/tools/news-terminal"
+                    href="/terminal"
                     onClick={() => {
                       setIsMenuOpen(false);
                       setIsToolsMobileOpen(false);

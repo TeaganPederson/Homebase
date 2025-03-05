@@ -25,49 +25,49 @@ type Milestone = {
 
 const roadmapData: Milestone[] = [
   {
-    date: "Feb 27, 2025",
+    date: "Mar 10, 2025",
     title: "v1 Launch Beta Testing",
     description:
       "Homebase v1 open beta goes live with core functionalities and limited features. Early adopters get exclusive access to products and the chance to earn rewards down the road.",
     icon: <FilesIcon />,
   },
   {
-    date: "TBD",
+    date: "Mar 20, 2025",
     title: "Coin Launch",
     description:
       "Introducing $HOME Coin. More details and presale information coming once launch data is confirmed, join our telegram to stay up to date!",
     icon: <Rocket />,
   },
   {
-    date: "Mar 20, 2025",
+    date: "Mar 27, 2025",
     title: "Coin of the Week Spaces",
     description:
       "Our first community event will be weekly spaces hosted on Sunday where everyone will submit the coin they think will perform the best that given week. Winner gets an ETH prize",
     icon: <CoinIcon />,
   },
   {
-    date: "Apr 3, 2025",
+    date: "Apr 10, 2025",
     title: "Trading Competition",
     description:
       "Enter your wallet in a week long trading competition, top 3 traders for the week get ETH prizes",
     icon: <ChartIcon />,
   },
   {
-    date: "Mar 10, 2025",
+    date: "Apr 17, 2025",
     title: "Community Kick-Off",
     description:
       "Join our AMA & interactive webinar to engage with the team and discuss upcoming products.",
     icon: <GroupIcon />,
   },
   {
-    date: "Apr 03, 2025",
+    date: "May 03, 2025",
     title: "v2 Official Launch",
     description:
-      "Release upgraded features: enhanced charts, expanded whale watchers, additional tools, and the launch of the Homebase Forum.",
+      "Release upgraded features: Adding Chart & TXs Support to screener, Whale Watchers now scans 5x as many Tokens, Introducing Homebase Forum, new trading tools added to library.",
     icon: <FilesIcon />,
   },
   {
-    date: "Apr 20, 2025",
+    date: "May 10, 2025",
     title: "Hackathon & Q&A",
     description:
       "A community hackathon paired with a live Q&A session to brainstorm and innovate together.",
@@ -75,9 +75,9 @@ const roadmapData: Milestone[] = [
   },
   {
     date: "Jun 01, 2025",
-    title: "Next Phase Preview",
+    title: "Base Intelligence",
     description:
-      "Building a new Phase of on-chain analytics, AI smart analytics.",
+      "Building a new phase of on-chain analytics, with AI Smart Analytics.",
     icon: <CloudUploadIcon />,
   },
 ];
